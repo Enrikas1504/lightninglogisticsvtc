@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us - Lightning Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: rgb(38, 164, 237);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: row;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 4em;
+            margin: 0;
+            color: white;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: white;
+        }
+
+        header img {
+            width: 180px;
+            height: auto;
+        }
+
+        nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 15px 20px; /* Added padding to make the bar taller */
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Vertically align the links */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow for a modern look */
+}
+
+nav a {
+    color: white;
+    padding: 16px 30px; /* Increased padding for more spacing */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em; /* Increased font size for better readability */
+    font-weight: 600; /* Made text a bit bolder */
+    letter-spacing: 1px; /* Spaced out the letters for a more modern feel */
+    margin: 0 10px; /* Added margin to space out the items */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 5px; /* Rounded corners for the buttons */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.05); /* Added slight zoom effect on hover */
+}
+nav a:focus {
+    outline: 3px solid rgb(38, 164, 237); /* Blue outline */
+    outline-offset: 2px; /* Slightly offset the outline to make it stand out */
+}
+
+        .hero {
+            background-image: url('Pictures/truck3.png'); /* Use your image */
+            background-size: cover;
+            height: 500px;
+            color: white;
+            text-align: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+            position: absolute;
+            text-align: center;
+        }
+
+        .hero h1:after {
+            content: '';
+            display: block;
+            margin: 10px auto;
+            width: 60px;
+            height: 3px;
+            background-color: white;
+        }
+
+        /* About Us Section (White Page) */
+        .about-us-section {
+            background-color: white;
+            color: black;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about-us-section p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .about-us-section .bold {
+            font-weight: bold;
+        }
+
+        /* YouTube and Image Section */
+        .video-image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .video-container {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .image-container {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .video-image-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .video-container, .image-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Pictures/logo2.png" alt="Lightning Logistics Logo">
+        <div style="text-align: center;">
+            <h1>Lightning Logistics</h1>
+            <p></p>
+        </div>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a> <!-- Link to Home page -->
+        <a href="about.html" class="active">About Us</a> <!-- This should highlight the current page -->
+        <a href="#gallery">Gallery</a>
+        <a href="donator.html">Donators</a>
+        <a href="#apply">Apply</a>
+        <a href="https://hub.lightninglogisticsvtc.com/" target="_blank">Drivers Hub</a>
+    </nav>
+
+<!-- Hero Section for About Us -->
+<section class="hero">
+    <h1>About Us</h1> <!-- Centered About Us text -->
+</section>
+
+<!-- About Us Section (White Section) -->
+<section class="about-us-section">
+    <p><span class="bold">A</span><span class="bold"> Verified</span> Virtual Trucking Company tailored to the needs of our community.<br>
+    You're more than just a number!</p>
+
+    <p>Lightning Logistics was founded upon two basic principles, professionalism and enjoyment. We believe that these characteristics can go hand in hand and we have made this our mission. With over 200 drivers and almost 1,300 discord members, Lightning Logistics aim to make <span class="bold">trucking</span> as accessible as possible. Our robust and fun-packed events schedule brings regular private, public, and external events <span class="bold">for everyone.</span></p>
+
+    <p>We are <span class="bold">FAIR</span>. Our 'lead by example' approach ensures that each member of Lightning, no matter their authority or status, is bound by the VTC rules and requirements that we have in place. We strive to make Lightning fair and consistent and will work tirelessly to ensure this.</p>
+
+    <p>We are <span class="bold">PROFESSIONAL</span>. Our high driving standards ensure that each member understands what is expected and portrays Lightning Logistics in a positive manner. We endeavor to be a company that drives professionally, taking care of other members on the road and giving positive Lightning experiences for all.</p>
+
+    <p>We are <span class="bold">ACTIVE</span>. We ensure that Lightning attends or hosts <span class="bold">at least</span> one convoy <span class="bold">every day</span>. This is equivalent to thirty convoys per month.</p>
+
+    <p>We value each and every member of our team. Every Lightning Logistics member plays their part in our success story, and we ensure that we recognize this regularly. Lightning is a team-effort to ensure that we can keep <span class="bold">Trucking, For Everyone!</span></p>
+
+    <p><span class="bold">Lightning Logistics - Trucking, for everyone!</span></p>
+</section>
+
+<!-- YouTube and Image Section -->
+<section class="video-image-section">
+    <div class="video-container">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TDgEPkKyVL0?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="image-container">
+        <!-- Add your image here -->
+        <img src="Pictures/truck4.png" alt="Image description">
+    </div>
+</section>
+
+<footer>
+    <p style="text-align: center; font-size: 1.5em; font-weight: bold; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
+        Lightning Logistics - Trucking, for everyone!
+    </p>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <p style="text-align: center; font-size: 1.2em; color: white;">Find us on:</p>
+        <div class="social-icons" style="text-align: center;">
+            <a href="https://www.instagram.com/lightninglogisticsvtc/" target="_blank"><img src="Pictures/instagram.png" alt="Instagram" style="width: 40px; margin: 10px;"></a>
+            <a href="https://x.com/LightningLogis2?mx=2" target="_blank"><img src="Pictures/twitter.png" alt="Twitter" style="width: 40px; margin: 10px;"></a>
+            <a href="https://www.tiktok.com/@lightninglogisticsvtc" target="_blank"><img src="Pictures/tiktok.png" alt="TikTok" style="width: 40px; margin: 10px;"></a>
+            <a href="https://discord.com/invite/mg6WPVwXxq" target="_blank"><img src="Pictures/discord.png" alt="Discord" style="width: 40px; margin: 10px;"></a>
+            <a href="https://www.youtube.com/channel/UCjI-e-bl_OpBdAr1BYKa_5w" target="_blank"><img src="Pictures/youtube.png" alt="YouTube" style="width: 40px; margin: 10px;"></a>
+        </div>
+    </section>
+
+    <p style="text-align: center; font-size: 1em; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
+        © 2025 Lightning Logistics | All rights reserved
+    </p>
+</footer>
+
+</html>
