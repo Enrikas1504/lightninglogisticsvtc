@@ -46,44 +46,44 @@
             height: auto;
         }
 
-        /* Navigation bar styles */
         nav {
-    background-color: #333;
-    overflow: hidden;
-    padding: 15px 20px; /* Added padding to make the bar taller */
-    display: flex;
-    justify-content: center; /* Center the links horizontally */
-    align-items: center; /* Vertically align the links */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow for a modern look */
-}
+            background-color: #333;
+            overflow: hidden;
+            padding: 15px 20px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        }
 
-nav a {
-    color: white;
-    padding: 16px 30px; /* Increased padding for more spacing */
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2em; /* Increased font size for better readability */
-    font-weight: 600; /* Made text a bit bolder */
-    letter-spacing: 1px; /* Spaced out the letters for a more modern feel */
-    margin: 0 10px; /* Added margin to space out the items */
-    transition: background-color 0.3s ease; /* Smooth background transition */
-    border-radius: 5px; /* Rounded corners for the buttons */
-}
+        nav a {
+            color: white;
+            padding: 16px 30px; 
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2em; 
+            font-weight: 600; 
+            letter-spacing: 1px; 
+            margin: 0 10px; 
+            transition: background-color 0.3s ease; 
+            border-radius: 5px; 
+        }
 
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-    transform: scale(1.05); /* Added slight zoom effect on hover */
-}
-nav a:focus {
-    outline: 3px solid rgb(38, 164, 237); /* Blue outline */
-    outline-offset: 2px; /* Slightly offset the outline to make it stand out */
-}
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        nav a:focus {
+            outline: 3px solid rgb(38, 164, 237); 
+            outline-offset: 2px; 
+        }
 
         .hero-image-container {
             position: relative;
             width: 100%;
-            height: 400px; /* Adjust as necessary */
+            height: 400px; 
         }
 
         .hero-image {
@@ -169,6 +169,18 @@ nav a:focus {
             color: black;
         }
 
+        .golden {
+            color: #FFD700; /* Gold */
+        }
+
+        .silver {
+            color: #C0C0C0; /* Silver */
+        }
+
+        .bronze {
+            color: #cd7f32; /* Bronze */
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -179,6 +191,44 @@ nav a:focus {
         .social-icons a {
             margin: 10px;
         }
+        .golden {
+        color: #FFD700; /* Gold color */
+}
+
+        .silver {
+        color: #C0C0C0; /* Silver color */
+}
+
+        .bronze {
+            color: #cd7f32; /* Bronze color */
+}
+        .social-media {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .social-media p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
@@ -186,29 +236,24 @@ nav a:focus {
     <img src="Pictures/logo2.png" alt="Lightning Logistics Logo">
     <div style="text-align: center;">
         <h1>Lightning Logistics</h1>
-        <p></p>
     </div>
 </header>
 
-<!-- Navigation Bar -->
 <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About </a>
+    <a href="about.html">About</a>
     <a href="gallery.html">Gallery</a>
     <a href="donators.html" class="active">Donators</a>
     <a href="apply.html">Apply</a>
     <a href="https://hub.lightninglogisticsvtc.com/" target="_blank">Drivers Hub</a>
 </nav>
 
-<!-- Image placed under the navigation bar -->
 <div class="hero-image-container">
     <img src="Pictures/truck5.png" alt="Hero Image" class="hero-image">
     <div class="donators-text">
         <h2>Donators</h2>
     </div>
-
-
-
+</div>
 
 <!-- Donators Section -->
 <section class="donators-section">
@@ -217,32 +262,32 @@ nav a:focus {
         <div class="donator">
             <img src="Pictures/marshy.png" alt="Donator 1">
             <p>Marshy</p>
-            <p class="title">Golden Patreon</p>
-        </div>
+            <p class="title golden">Golden Patreon</p> <!-- Golden Patreon with gold color -->
+        </div>        
         <div class="donator">
             <img src="Pictures/tyler.png" alt="Donator 2">
             <p>Bin_Tyler</p>
-            <p class="title">Golden Patreon</p>
+            <p class="title golden">Golden Patreon</p>
         </div>
         <div class="donator">
             <img src="Pictures/angrymelon.png" alt="Donator 3">
             <p>AngryMelon</p>
-            <p class="title">Golden Patreon</p>
+            <p class="title golden">Golden Patreon</p>
         </div>
         <div class="donator">
             <img src="Pictures/joavl.png" alt="Donator 4">
-            <p> joasvl</p>
-            <p class="title">Silver Patreon</p>
+            <p>joasvl</p>
+            <p class="title silver">Silver Patreon</p>
         </div>
         <div class="donator">
             <img src="Pictures/pieter.png" alt="Donator 5">
             <p>Pieter.64</p>
-            <p class="title">Silver Patreon</p>
+            <p class="title silver">Silver Patreon</p>
         </div>
         <div class="donator">
             <img src="Pictures/Pyrozen.gif" alt="Donator 6">
             <p>Pyrozen</p>
-            <p class="title">Bronze Patreon</p>
+            <p class="title bronze">Bronze Patreon</p>
         </div>
     </div>
 </section>
@@ -252,7 +297,6 @@ nav a:focus {
         Lightning Logistics - Trucking, for everyone!
     </p>
 
-    <!-- Social Media Section -->
     <section class="social-media">
         <p style="text-align: center; font-size: 1.2em; color: white;">Find us on:</p>
         <div class="social-icons" style="text-align: center;">

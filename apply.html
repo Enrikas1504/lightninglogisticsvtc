@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apply - Lightning Logistics</title>
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('gallery/backround.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #f0f0f0;
+}
+
+
+        header {
+            background-color: rgb(38, 164, 237);
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            flex-direction: row;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 4em;
+            margin: 0;
+            color: white;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: white;
+        }
+
+        header img {
+            width: 180px;
+            height: auto;
+        }
+
+        /* Navigation bar styles */
+        nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+nav a {
+    color: white;
+    padding: 16px 30px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    margin: 0 10px; 
+    transition: background-color 0.3s ease; 
+    border-radius: 5px; 
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.05); 
+}
+nav a:focus {
+    outline: 3px solid rgb(38, 164, 237); 
+    outline-offset: 2px; 
+}
+        /* Main Title */
+        .main-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 600;
+            color: rgb(38, 164, 237);
+            margin-top: 30px;
+        }
+
+        /* Apply Box Styles */
+        .apply-box {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #333;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .apply-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .apply-box h2 {
+            font-size: 2.2em;
+            color: rgb(38, 164, 237);
+            margin-bottom: 15px;
+        }
+
+        .apply-box p {
+            font-size: 1.2em;
+            color: #f4f7fc;
+            line-height: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        /* Requirements */
+        .requirements {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .requirement {
+            width: 48%;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .requirement:hover {
+            color: rgb(38, 164, 237);
+        }
+
+        /* Apply Now Section */
+        .apply-now-section {
+            width: 300px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .apply-now-section h3 {
+            font-size: 1.8em;
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            background-color: rgb(38, 164, 237);
+            padding: 15px 30px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: #217dbb;
+            transform: scale(1.05);
+        }
+
+        /* Staff Roles */
+        .staff-section {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #333;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .staff-section h2 {
+            font-size: 2.2em;
+            color: rgb(38, 164, 237);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Staff Roles Grid */
+        .staff-roles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust for flexibility */
+            gap: 20px;  /* Space between the roles */
+            justify-items: center;  /* Aligns items to the center */
+        }
+
+        /* Individual Role */
+        .role {
+            background-color: #444;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        /* Hover Effect */
+        .role:hover {
+            background-color: rgb(38, 164, 237);
+            transform: scale(1.05);
+        }
+
+        /* Role Span (Closed/Open) */
+        .role span {
+            display: block;
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #28a745; /* Green for Open */
+        }
+
+        /* Closed Role */
+        .role.closed {
+            color: red;
+        }
+
+        .role.closed span {
+            color: red;
+        }
+
+        .role.closed:hover {
+            background-color: #444;
+            transform: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .apply-box {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .apply-now-section {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+
+            .requirement {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .staff-roles {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .role {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+            footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .social-icons a {
+            margin: 10px;
+        }
+        .social-media {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .social-media p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Pictures/logo2.png" alt="Lightning Logistics Logo">
+        <div style="text-align: center;">
+            <h1>Lightning Logistics</h1>
+            <p></p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="donator.html">Donators</a>
+        <a href="apply.html" class="active">Apply</a>
+        <a href="https://hub.lightninglogisticsvtc.com/" target="_blank">Drivers Hub</a>
+    </nav>
+
+    <div class="main-title">
+        Drive with us today
+    </div>
+
+    <div class="apply-box">
+        <div class="apply-info">
+            <h2>Lightning Logistics Driver</h2>
+            <p>Thank you for considering Lightning Logistics! We strive to make your VTC experience the best possible.</p>
+            <p>To start your Lightning Logistics journey today, head over to our discord and open an application by visiting the #apply page!</p>
+
+            <h3>Requirements:</h3>
+            <div class="requirements">
+                <div class="requirement">Must Log 1,000KM Per Month</div>
+                <div class="requirement">Attend 2 Convoys Per Month</div>
+                <div class="requirement">Must Drive Sensibly when on TMP</div>
+                <div class="requirement">Always use our tag</div>
+                <div class="requirement">Must drive in the Lightning Logistics Paintjob</div>
+                <div class="requirement">You need to be over the age of 13</div>
+            </div>
+        </div>
+
+        <div class="apply-now-section">
+            <h3>Want to join us?</h3>
+            <a href="https://discord.com/invite/mg6WPVwXxq" class="apply-btn" target="_blank">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="staff-section">
+        <h2>Or want to become a Staff Member?</h2>
+        <div class="staff-roles">
+            <div class="role">
+                Media Manager
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1102319716661469314" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="role">
+                Event Manager
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/909260742140772413" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="role">
+                Community Manager
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1118665503829921913" class="apply-btn">Apply Now</a>
+            </div>
+            
+            <div class="role">
+                Media Team
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1201254697298837574" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="role">
+                Events Team
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1102319848614268959" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="role closed">
+                Human Resources Team
+                <span>Closed</span>
+                <a href="" class="apply-btn">Apply Now</a>
+            </div>            
+            <div class="role">
+                Community Team
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1201193466722521181" class="apply-btn">Apply Now</a>
+            </div>
+            <div class="role">
+                Addon Team
+                <span>Open</span>
+                <a href="https://discord.com/channels/809218702046134282/1220879611022409890" class="apply-btn">Apply Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="text-align: center; font-size: 1.5em; font-weight: bold; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
+            Lightning Logistics - Trucking, for everyone!
+        </p>
+    
+        <section class="social-media">
+            <p style="text-align: center; font-size: 1.2em; color: white;">Find us on:</p>
+            <div class="social-icons" style="text-align: center;">
+                <a href="https://www.instagram.com/lightninglogisticsvtc/" target="_blank"><img src="Pictures/instagram.png" alt="Instagram" style="width: 40px; margin: 10px;"></a>
+                <a href="https://x.com/LightningLogis2?mx=2" target="_blank"><img src="Pictures/twitter.png" alt="Twitter" style="width: 40px; margin: 10px;"></a>
+                <a href="https://www.tiktok.com/@lightninglogisticsvtc" target="_blank"><img src="Pictures/tiktok.png" alt="TikTok" style="width: 40px; margin: 10px;"></a>
+                <a href="https://discord.com/invite/mg6WPVwXxq" target="_blank"><img src="Pictures/discord.png" alt="Discord" style="width: 40px; margin: 10px;"></a>
+                <a href="https://www.youtube.com/channel/UCjI-e-bl_OpBdAr1BYKa_5w" target="_blank"><img src="Pictures/youtube.png" alt="YouTube" style="width: 40px; margin: 10px;"></a>
+            </div>
+        </section>
+    
+        <p style="text-align: center; font-size: 1em; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
+            © 2025 Lightning Logistics | All rights reserved
+        </p>
+    </footer>
+    
+    </html>
