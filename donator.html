@@ -148,6 +148,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            width: 250px;
+            margin-bottom: 20px;
         }
 
         .donator:hover {
@@ -191,17 +193,7 @@
         .social-icons a {
             margin: 10px;
         }
-        .golden {
-        color: #FFD700; /* Gold color */
-}
 
-        .silver {
-        color: #C0C0C0; /* Silver color */
-}
-
-        .bronze {
-            color: #cd7f32; /* Bronze color */
-}
         .social-media {
             text-align: center;
             padding: 40px 20px;
@@ -229,6 +221,46 @@
             transform: scale(1.1);
         }
 
+        /* Media queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            .hero-image-container {
+                height: 300px;
+            }
+
+            .donators-text h2 {
+                font-size: 2em;
+            }
+
+            .donators-section h2 {
+                font-size: 2.5em;
+            }
+
+            .donator-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .donator {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .donators-description {
+                font-size: 1em;
+                padding: 20px;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
     </style>
 </head>
 <body>
