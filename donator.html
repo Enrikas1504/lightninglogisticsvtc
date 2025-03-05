@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag for better responsiveness -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Donators - Lightning Logistics</title>
-    <!-- Google Fonts link -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -24,7 +23,6 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            flex-direction: row;
         }
 
         header h1 {
@@ -32,12 +30,6 @@
             font-weight: bold;
             font-size: 4em;
             margin: 0;
-            color: white;
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin-top: 10px;
             color: white;
         }
 
@@ -49,24 +41,24 @@
         nav {
             background-color: #333;
             overflow: hidden;
-            padding: 15px 20px; 
+            padding: 15px 20px;
             display: flex;
-            justify-content: center; 
-            align-items: center; 
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
-            padding: 16px 30px; 
+            padding: 16px 20px;
             text-align: center;
             text-decoration: none;
-            font-size: 1.2em; 
-            font-weight: 600; 
-            letter-spacing: 1px; 
-            margin: 0 10px; 
-            transition: background-color 0.3s ease; 
-            border-radius: 5px; 
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
         }
 
         nav a:hover {
@@ -75,21 +67,16 @@
             transform: scale(1.05);
         }
 
-        nav a:focus {
-            outline: 3px solid rgb(38, 164, 237); 
-            outline-offset: 2px; 
-        }
-
         .hero-image-container {
             position: relative;
             width: 100%;
-            height: 400px; 
+            height: 400px;
         }
 
         .hero-image {
             width: 100%;
             height: 100%;
-            object-fit: cover; 
+            object-fit: cover;
         }
 
         .donators-text {
@@ -105,20 +92,6 @@
             font-size: 3em;
             font-weight: bold;
             color: white;
-            margin: 0;
-        }
-
-        .donators-description {
-            background-color: #f9f9f9;
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 1.2em;
-            color: #333;
-            margin-top: 20px;
-            border-radius: 8px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .donators-section {
@@ -126,12 +99,6 @@
             text-align: center;
             background-color: white;
             color: black;
-        }
-
-        .donators-section h2 {
-            font-size: 3em;
-            margin-bottom: 40px;
-            color: rgb(38, 164, 237);
         }
 
         .donator-list {
@@ -165,33 +132,15 @@
             margin-bottom: 10px;
         }
 
-        .donator p {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: black;
-        }
-
-        .golden {
-            color: #FFD700; /* Gold */
-        }
-
-        .silver {
-            color: #C0C0C0; /* Silver */
-        }
-
-        .bronze {
-            color: #cd7f32; /* Bronze */
-        }
+        .golden { color: #FFD700; }
+        .silver { color: #C0C0C0; }
+        .bronze { color: #cd7f32; }
 
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-        }
-
-        .social-icons a {
-            margin: 10px;
         }
 
         .social-media {
@@ -201,19 +150,8 @@
             color: white;
         }
 
-        .social-media p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            display: inline-block;
-        }
-
         .social-icons img {
             width: 40px;
-            height: auto;
             transition: transform 0.3s ease;
         }
 
@@ -221,8 +159,12 @@
             transform: scale(1.1);
         }
 
-        /* Media queries for mobile responsiveness */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
             header h1 {
                 font-size: 2.5em;
             }
@@ -235,39 +177,19 @@
                 font-size: 2em;
             }
 
-            .donators-section h2 {
-                font-size: 2.5em;
-            }
-
-            .donator-list {
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-            }
-
             .donator {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .donators-description {
-                font-size: 1em;
-                padding: 20px;
-            }
-
-            nav a {
-                font-size: 1em;
-                padding: 12px 20px;
+                width: 90%;
             }
         }
     </style>
 </head>
 <body>
+
 <header>
     <img src="Pictures/logo2.png" alt="Lightning Logistics Logo">
     <div style="text-align: center;">
         <h1>Lightning Logistics</h1>
+        <p></p>
     </div>
 </header>
 
@@ -275,7 +197,7 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="gallery.html">Gallery</a>
-    <a href="donators.html" class="active">Donators</a>
+    <a href="donator.html">Donators</a>
     <a href="apply.html">Apply</a>
     <a href="https://hub.lightninglogisticsvtc.com/" target="_blank">Drivers Hub</a>
 </nav>
@@ -323,7 +245,6 @@
         </div>
     </div>
 </section>
-
 <footer>
     <p style="text-align: center; font-size: 1.5em; font-weight: bold; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
         Lightning Logistics - Trucking, for everyone!
@@ -340,10 +261,18 @@
         </div>
     </section>
 
+    <div class="footer-links">
+        <a href="termsofuse.html" style="color: white;">Terms of Use</a>
+        <a href="policy.html" style="color: white;">Privacy Policy</a>
+    </div>
+
     <p style="text-align: center; font-size: 1em; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
         © 2025 Lightning Logistics | All rights reserved
     </p>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>

@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Apply - Lightning Logistics</title>
+    <title>Lightning Logistics</title>
     <!-- Google Fonts link -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('Pictures/truck7.png'); 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
-            color: #f0f0f0;
+            background-image: url('Pictures/truck7.png'); /* Background image for the page */
+            background-size: cover; /* Makes sure the image covers the entire background */
+            background-position: center; /* Centers the background image */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            color: #f0f0f0; /* Text color */
         }
 
         header {
@@ -51,55 +52,60 @@
 
         /* Navigation bar styles */
         nav {
-            background-color: #333;
+            background-color: #333; /* Dark background color */
             overflow: hidden;
-            padding: 15px 20px; 
+            padding: 15px 20px;
             display: flex;
-            justify-content: center; 
-            align-items: center; 
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            flex-wrap: wrap; /* Allowing links to wrap on small screens */
         }
 
+        /* Navigation links styling */
         nav a {
             color: white;
-            padding: 16px 30px; 
+            padding: 16px 30px; /* Padding around the link text */
             text-align: center;
             text-decoration: none;
-            font-size: 1.2em; 
-            font-weight: 600; 
-            letter-spacing: 1px; 
-            margin: 0 10px; 
-            transition: background-color 0.3s ease; 
-            border-radius: 5px; 
+            font-size: 1.2em; /* Font size of the links */
+            font-weight: 600;
+            letter-spacing: 1px; /* Spacing between letters */
+            margin: 0 10px; /* Margin between each link */
+            transition: background-color 0.3s ease; /* Smooth background color change on hover */
+            border-radius: 5px; /* Rounded corners on links */
         }
 
+        /* Hover effect for navigation links */
         nav a:hover {
-            background-color: #ddd;
-            color: black;
-            transform: scale(1.05); 
-        }
-        nav a:focus {
-            outline: 3px solid rgb(38, 164, 237); 
-            outline-offset: 2px; 
+            background-color: #ddd; /* Change background color */
+            color: black; /* Text color change */
+            transform: scale(1.05); /* Slight zoom effect */
         }
 
-        /* Main Title */
+        /* Focus effect for navigation links (accessibility) */
+        nav a:focus {
+            outline: 3px solid rgb(38, 164, 237); /* Outline when the link is focused */
+            outline-offset: 2px; /* Space between the link and its outline */
+        }
+
+        /* Main title styling */
         .main-title {
             text-align: center;
             font-size: 2.5em;
             font-weight: 600;
-            color: rgb(38, 164, 237);
+            color: rgb(38, 164, 237); /* Light blue color for main title */
             margin-top: 30px;
         }
 
-        /* Apply Box Styles */
+        /* Apply Box Section */
         .apply-box {
             width: 90%;
             max-width: 1200px;
             margin: 40px auto;
             padding: 30px;
-            background-color: #333;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            background-color: #333; /* Dark background */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Shadow around the box */
             border-radius: 15px;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -107,28 +113,32 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            flex-wrap: wrap; /* Allows elements to wrap in small screens */
         }
 
+        /* Apply Box hover effect */
         .apply-box:hover {
-            transform: translateY(-5px);
+            transform: translateY(-5px); /* Moves the box upwards */
         }
 
+        /* Apply Box title styling */
         .apply-box h2 {
             font-size: 2.2em;
-            color: rgb(38, 164, 237);
+            color: rgb(38, 164, 237); /* Light blue color for the title */
             margin-bottom: 15px;
         }
 
+        /* Apply Box paragraph styling */
         .apply-box p {
             font-size: 1.2em;
-            color: #f4f7fc;
-            line-height: 1.8em;
+            color: #f4f7fc; /* Lighter text color */
+            line-height: 1.8em; /* Line height for readability */
             margin-bottom: 20px;
         }
 
-        /* Requirements */
+        /* Requirements box styling */
         .requirements {
-            background-color: #333;
+            background-color: #333; /* Dark background */
             padding: 30px;
             border-radius: 15px;
             color: white;
@@ -140,34 +150,39 @@
             justify-content: space-between;
         }
 
+        /* Individual requirement styling */
         .requirement {
-            width: 48%;
+            width: 48%; /* Two requirements per row */
             margin-bottom: 20px;
             transition: all 0.3s ease;
         }
 
+        /* Hover effect for requirements */
         .requirement:hover {
-            color: rgb(38, 164, 237);
+            color: rgb(38, 164, 237); /* Light blue color when hovered */
         }
 
-        /* Apply Now Section */
+        /* Apply Now Section styling */
         .apply-now-section {
             width: 300px;
             margin-left: 20px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            margin-top: 20px;
         }
 
+        /* Apply Now Section heading styling */
         .apply-now-section h3 {
             font-size: 1.8em;
             color: white;
             margin-bottom: 15px;
         }
 
+        /* Apply button styling */
         .apply-btn {
             display: inline-block;
-            background-color: rgb(38, 164, 237);
+            background-color: rgb(38, 164, 237); /* Light blue button */
             padding: 15px 30px;
             color: white;
             font-size: 1.2em;
@@ -178,28 +193,30 @@
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
+        /* Hover effect for apply button */
         .apply-btn:hover {
-            background-color: #217dbb;
-            transform: scale(1.05);
+            background-color: #217dbb; /* Darker blue on hover */
+            transform: scale(1.05); /* Slight zoom effect */
         }
 
-        /* Staff Roles */
+        /* Staff Section Styling */
         .staff-section {
             width: 90%;
             max-width: 1200px;
             margin: 40px auto;
             padding: 30px;
-            background-color: #333;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+            background-color: #333; /* Dark background */
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Shadow effect */
             border-radius: 15px;
             overflow: hidden;
             transition: all 0.3s ease;
             color: white;
         }
 
+        /* Staff Section title styling */
         .staff-section h2 {
             font-size: 2.2em;
-            color: rgb(38, 164, 237);
+            color: rgb(38, 164, 237); /* Light blue color */
             margin-bottom: 15px;
             text-align: center;
         }
@@ -207,14 +224,14 @@
         /* Staff Roles Grid */
         .staff-roles {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust for flexibility */
-            gap: 20px;  /* Space between the roles */
-            justify-items: center;  /* Aligns items to the center */
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust grid columns */
+            gap: 20px;
+            justify-items: center; /* Centers items in the grid */
         }
 
-        /* Individual Role */
+        /* Individual role box styling */
         .role {
-            background-color: #444;
+            background-color: #444; /* Dark background for individual roles */
             padding: 15px;
             text-align: center;
             font-size: 1.2em;
@@ -224,156 +241,113 @@
             width: 100%;
         }
 
-        /* Hover Effect */
+        /* Hover effect for role box */
         .role:hover {
-            background-color: rgb(38, 164, 237);
-            transform: scale(1.05);
+            background-color: rgb(38, 164, 237); /* Light blue on hover */
+            transform: scale(1.05); /* Zoom effect */
         }
 
-        /* Role Span (Closed/Open) */
+        /* Span element for the closed/open status */
         .role span {
             display: block;
             font-size: 1.1em;
             margin-top: 10px;
-            color: #28a745; /* Green for Open */
+            color: #28a745; /* Green color for open roles */
         }
 
-        /* Closed Role */
+        /* Closed role styles */
         .role.closed {
-            color: red;
+            color: red; /* Red for closed roles */
         }
 
+        /* Closed role span styling */
         .role.closed span {
             color: red;
         }
 
+        /* Closed role hover styles */
         .role.closed:hover {
-            background-color: #444;
+            background-color: #444; /* No change on hover for closed roles */
             transform: none;
         }
 
+        /* Footer styling */
         footer {
-            background-color: #333;
+            background-color: #333; /* Dark footer background */
             color: white;
             text-align: center;
             padding: 10px 0;
         }
 
+        /* Footer paragraph styling */
         footer p {
             font-size: 1.2em;
         }
 
-        /* Media Queries for Responsiveness */
+        /* Media Queries for responsiveness on smaller screens */
         @media screen and (max-width: 768px) {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+
+            /* Adjust header elements for smaller screens */
+            header h1 {
+                font-size: 2em; /* Make header text smaller */
+            }
+
+            /* Adjust navigation bar for mobile */
+            nav a {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            /* Make apply box more responsive */
             .apply-box {
                 flex-direction: column;
                 align-items: center;
                 padding: 20px;
-                overflow: auto; /* Allow scrolling if content overflows */
+            }
+
+            /* Make requirements stack vertically */
+            .requirement {
+                width: 100%; /* 100% width on mobile */
+            }
+
+            .staff-roles {
+                grid-template-columns: 1fr; /* Stack roles vertically */
+            }
+
+            .role {
+                width: 100%; /* 100% width for each role */
             }
 
             .apply-now-section {
                 width: 100%;
                 margin-left: 0;
-                margin-top: 30px;
-            }
-
-            .requirement {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .staff-roles {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .role {
-                width: 80%;
-                margin: 10px 0;
-            }
-
-            footer {
-                background-color: #333;
-                color: white;
-                text-align: center;
-                padding: 10px;
-            }
-
-            .social-icons a {
-                margin: 10px;
-            }
-
-            .social-media {
-                text-align: center;
-                padding: 40px 20px;
-                background-color: #333;
-                color: white;
-            }
-
-            .social-media p {
-                font-size: 1.5em;
-                margin-bottom: 20px;
-            }
-
-            .social-icons a {
-                margin: 0 15px;
-                display: inline-block;
-            }
-
-            .social-icons img {
-                width: 40px;
-                height: auto;
-                transition: transform 0.3s ease;
-            }
-
-            .social-icons img:hover {
-                transform: scale(1.1);
+                margin-top: 20px;
             }
         }
 
-        /* Ensure images inside .apply-box are zoomable and movable */
+        /* Zoom effect for images inside .apply-box */
         .apply-box img {
-            max-width: 100%; /* Make sure images are responsive */
+            max-width: 100%; /* Makes sure images don't overflow */
             height: auto;
-            object-fit: contain; /* Preserve aspect ratio and ensure images fit well */
-        }
-
-        /* Mobile and touch support: enable pinch zooming and scrolling */
-        @media screen and (max-width: 768px) {
-            .apply-box img {
-                /* Make images responsive with pinch-to-zoom enabled */
-                touch-action: manipulation; /* Enable gestures */
-                width: 100%;
-                max-width: 100%;
-            }
-
-            /* Enable pinch zoom on images */
-            img {
-                -webkit-touch-callout: none; /* Disable the default touch callout on mobile */
-                -webkit-user-select: none; /* Disable text selection */
-                -ms-user-select: none;
-                user-select: none;
-            }
-        }
-
-        /* Smooth zoom effect for images on hover (Desktop) */
-        .apply-box img:hover {
-            transform: scale(1.1);
-            transition: transform 0.3s ease;
+            object-fit: contain; /* Maintains aspect ratio of images */
         }
     </style>
 </head>
 <body>
 
+    <!-- Header Section with logo and title -->
     <header>
         <img src="Pictures/logo2.png" alt="Lightning Logistics Logo">
         <div style="text-align: center;">
             <h1>Lightning Logistics</h1>
-            <p></p>
         </div>
     </header>
 
+    <!-- Navigation Bar with links -->
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -383,6 +357,7 @@
         <a href="https://hub.lightninglogisticsvtc.com/" target="_blank">Drivers Hub</a>
     </nav>
 
+    <!-- Main title for the apply page -->
     <div class="main-title">
         Drive with us today
     </div>
@@ -473,9 +448,17 @@
             </div>
         </section>
     
+        <div class="footer-links">
+            <a href="termsofuse.html" style="color: white;">Terms of Use</a>
+            <a href="policy.html" style="color: white;">Privacy Policy</a>
+        </div>
+
         <p style="text-align: center; font-size: 1em; color: white; background-color: rgb(38, 164, 237); margin: 0; padding: 10px;">
             © 2025 Lightning Logistics | All rights reserved
         </p>
     </footer>
+
+</body>
+</html>
     
     </html>
